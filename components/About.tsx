@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTranslations } from "@/lib/translations";
 
@@ -27,16 +28,52 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-circuit">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* About Company */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-6">
-            {t.about.title}
-          </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            {t.about.description}
-          </p>
+        {/* About Company - With Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          {/* Image */}
+          <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
+            <Image
+              src="/covers/two_workers_operating_the_line_faceshot_closeup.jpg"
+              alt="Professional automation engineers at work"
+              fill
+              className="object-cover"
+            />
+            {/* Accent border */}
+            <div className="absolute inset-0 border-4 border-cyan-800/20 rounded-2xl" />
+          </div>
+
+          {/* Text Content */}
+          <div className="order-1 lg:order-2">
+            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-6">
+              {t.about.title}
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              {t.about.description}
+            </p>
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 mt-8">
+              <div className="text-center p-4 bg-cyan-50 rounded-xl">
+                <div className="text-3xl font-bold text-cyan-800">S-XL</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  {language === "ru" ? "Классы систем" : language === "uz" ? "Tizim sinflari" : "System classes"}
+                </div>
+              </div>
+              <div className="text-center p-4 bg-cyan-50 rounded-xl">
+                <div className="text-3xl font-bold text-cyan-800">24/7</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  {language === "ru" ? "Поддержка" : language === "uz" ? "Qo'llab-quvvatlash" : "Support"}
+                </div>
+              </div>
+              <div className="text-center p-4 bg-cyan-50 rounded-xl">
+                <div className="text-3xl font-bold text-cyan-800">100%</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  {language === "ru" ? "Качество" : language === "uz" ? "Sifat" : "Quality"}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* System Classes */}
@@ -54,7 +91,7 @@ export default function About() {
             {t.about.systemClasses.classes.map((cls, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
+                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-cyan-200 transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-cyan-100 rounded-lg text-cyan-800">

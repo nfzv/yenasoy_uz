@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTranslations } from "@/lib/translations";
 
@@ -35,16 +36,49 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section id="benefits" className="py-20 bg-circuit overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-4">
-            {t.benefits.title}
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t.benefits.subtitle}
-          </p>
+        {/* Header with Image Side */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Text Content */}
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-4">
+              {t.benefits.title}
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              {t.benefits.subtitle}
+            </p>
+          </div>
+          
+          {/* Image */}
+          <div className="relative h-[300px] lg:h-[350px] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/covers/two_workers_looking_at_monitor.jpg"
+              alt="Professional monitoring and support"
+              fill
+              className="object-cover"
+            />
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/40 to-transparent" />
+            {/* Accent element */}
+            <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-cyan-800 rounded-lg">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    {language === "ru" ? "Профессиональная команда" : language === "uz" ? "Professional jamoa" : "Professional Team"}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    {language === "ru" ? "Опытные инженеры автоматизации" : language === "uz" ? "Tajribali avtomatlashtirish muhandislari" : "Experienced automation engineers"}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Benefits Grid */}

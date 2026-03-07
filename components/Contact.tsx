@@ -58,7 +58,7 @@ Message: ${formData.message}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="bg-circuit-dense rounded-2xl shadow-xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>

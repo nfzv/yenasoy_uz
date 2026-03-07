@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTranslations } from "@/lib/translations";
 
@@ -33,14 +34,28 @@ export default function Services() {
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-800 mb-4">
-            {t.services.title}
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t.services.subtitle}
-          </p>
+        {/* Header with Image Banner */}
+        <div className="relative mb-16 rounded-2xl overflow-hidden">
+          {/* Background Image */}
+          <div className="relative h-[300px] sm:h-[350px]">
+            <Image
+              src="/covers/conveyor_line_orange_juice_bottles.png"
+              alt="Production line automation"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-900/90 via-cyan-800/80 to-cyan-900/70" />
+          </div>
+          
+          {/* Text Overlay */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+              {t.services.title}
+            </h2>
+            <p className="text-lg sm:text-xl text-cyan-100 max-w-2xl drop-shadow-md">
+              {t.services.subtitle}
+            </p>
+          </div>
         </div>
 
         {/* Service Categories */}
@@ -48,7 +63,7 @@ export default function Services() {
           {t.services.categories.map((category, catIndex) => (
             <div
               key={catIndex}
-              className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
+              className="bg-circuit-subtle rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-300"
             >
               {/* Category Header */}
               <div className="bg-gradient-to-r from-cyan-800 to-cyan-700 px-6 py-5">
@@ -73,7 +88,7 @@ export default function Services() {
                   {category.items.map((item, itemIndex) => (
                     <div
                       key={itemIndex}
-                      className="p-4 rounded-xl bg-gray-50 hover:bg-cyan-50 transition-colors border border-gray-100"
+                      className="p-4 rounded-xl bg-gray-50 hover:bg-cyan-50 transition-colors border border-gray-100 hover:border-cyan-200"
                     >
                       <h4 className="font-semibold text-gray-900 mb-2 flex items-start gap-2">
                         <svg className="w-5 h-5 text-cyan-800 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

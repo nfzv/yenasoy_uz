@@ -81,3 +81,72 @@ html {
     scroll-padding-top: 70px;
   }
 }
+
+/* Circuit Pattern Background */
+.bg-circuit {
+  background-color: #ffffff;
+  background-image: 
+    /* Horizontal lines */
+    linear-gradient(90deg, transparent 0%, transparent 48%, rgba(21, 94, 117, 0.08) 48%, rgba(21, 94, 117, 0.08) 52%, transparent 52%, transparent 100%),
+    /* Vertical lines */
+    linear-gradient(0deg, transparent 0%, transparent 48%, rgba(21, 94, 117, 0.08) 48%, rgba(21, 94, 117, 0.08) 52%, transparent 52%, transparent 100%),
+    /* Nodes/dots at intersections */
+    radial-gradient(circle at 50% 50%, rgba(21, 94, 117, 0.12) 2px, transparent 2px),
+    /* Corner connectors top-left */
+    radial-gradient(circle at 25% 25%, rgba(21, 94, 117, 0.06) 1.5px, transparent 1.5px),
+    /* Corner connectors bottom-right */
+    radial-gradient(circle at 75% 75%, rgba(21, 94, 117, 0.06) 1.5px, transparent 1.5px),
+    /* Horizontal trace lines */
+    linear-gradient(90deg, transparent 20%, rgba(21, 94, 117, 0.04) 20%, rgba(21, 94, 117, 0.04) 25%, transparent 25%, transparent 75%, rgba(21, 94, 117, 0.04) 75%, rgba(21, 94, 117, 0.04) 80%, transparent 80%),
+    /* Vertical trace lines */
+    linear-gradient(0deg, transparent 20%, rgba(21, 94, 117, 0.04) 20%, rgba(21, 94, 117, 0.04) 25%, transparent 25%, transparent 75%, rgba(21, 94, 117, 0.04) 75%, rgba(21, 94, 117, 0.04) 80%, transparent 80%);
+  background-size: 
+    80px 80px,
+    80px 80px,
+    80px 80px,
+    40px 40px,
+    40px 40px,
+    160px 160px,
+    160px 160px;
+  background-position: 
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0;
+}
+
+/* Subtle circuit pattern variant */
+.bg-circuit-subtle {
+  background-color: #ffffff;
+  background-image: 
+    /* Main grid lines */
+    linear-gradient(90deg, rgba(21, 94, 117, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(21, 94, 117, 0.05) 1px, transparent 1px),
+    /* Nodes */
+    radial-gradient(circle at 0% 0%, rgba(21, 94, 117, 0.1) 2px, transparent 2px);
+  background-size: 
+    40px 40px,
+    40px 40px,
+    40px 40px;
+}
+
+/* Dense circuit pattern for smaller areas */
+.bg-circuit-dense {
+  background-color: #ffffff;
+  background-image: 
+    /* Grid */
+    linear-gradient(90deg, rgba(21, 94, 117, 0.06) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(21, 94, 117, 0.06) 1px, transparent 1px),
+    /* Nodes */
+    radial-gradient(circle at 0% 0%, rgba(21, 94, 117, 0.12) 1.5px, transparent 1.5px),
+    /* Trace paths */
+    linear-gradient(90deg, transparent 0%, transparent 40%, rgba(21, 94, 117, 0.04) 40%, rgba(21, 94, 117, 0.04) 60%, transparent 60%, transparent 100%);
+  background-size: 
+    20px 20px,
+    20px 20px,
+    20px 20px,
+    40px 40px;
+}
