@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yenasoy - Industrial Automation Services",
-  description: "Comprehensive industrial automation solutions: PLC programming, HMI development, diagnostics, and technical support for manufacturing enterprises.",
+  title: "Yenasoy - Sanoat Avtomatlashtirish Xizmatlari",
+  description: "O'zbekistonning yetakchi sanoat avtomatlashtirish kompaniyasi, PLC dasturlash, HMI ishlab chiqish va SCADA tizimlarini o'z ichiga olgan keng qamrovli xizmatlarni taqdim etadi.",
   keywords: ["industrial automation", "PLC programming", "HMI development", "SCADA", "automation services", "Uzbekistan", "Yenasoy"],
   authors: [{ name: "Yenasoy" }],
   openGraph: {
-    title: "Yenasoy - Industrial Automation Services",
-    description: "Comprehensive industrial automation solutions for manufacturing enterprises",
+    title: "Yenasoy - Sanoat Avtomatlashtirish Xizmatlari",
+    description: "O'zbekistonning yetakchi sanoat avtomatlashtirish kompaniyasi, PLC dasturlash, HMI ishlab chiqish va SCADA tizimlarini o'z ichiga olgan keng qamrovli xizmatlarni taqdim etadi.",
     type: "website",
-    locale: "ru_RU",
-    alternateLocale: ["uz_UZ", "en_US"],
+    locale: "uz_UZ",
+    alternateLocale: ["ru_RU", "en_US"],
   },
 };
 
