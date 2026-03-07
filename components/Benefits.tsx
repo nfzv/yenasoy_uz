@@ -36,7 +36,21 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-circuit overflow-hidden">
+    <section id="benefits" className="py-20 overflow-hidden shadow-xl relative">
+  {/* Crosshatch Art - Light Pattern */}
+  <div
+    className="absolute inset-0 -z-1 pointer-events-none"
+    style={{
+      backgroundImage: `
+        repeating-linear-gradient(22.5deg, transparent, transparent 2px, rgba(75, 85, 99, 0.06) 2px, rgba(75, 85, 99, 0.06) 3px, transparent 3px, transparent 8px),
+        repeating-linear-gradient(67.5deg, transparent, transparent 2px, rgba(107, 114, 128, 0.05) 2px, rgba(107, 114, 128, 0.05) 3px, transparent 3px, transparent 8px),
+        repeating-linear-gradient(112.5deg, transparent, transparent 2px, rgba(55, 65, 81, 0.04) 2px, rgba(55, 65, 81, 0.04) 3px, transparent 3px, transparent 8px),
+        repeating-linear-gradient(157.5deg, transparent, transparent 2px, rgba(31, 41, 55, 0.03) 2px, rgba(31, 41, 55, 0.03) 3px, transparent 3px, transparent 8px)
+      `,
+    }}
+  />
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Image Side */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">

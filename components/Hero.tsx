@@ -26,19 +26,6 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
         <div className="text-center">
-          {/* Logo */}
-          <div className="flex justify-center mb-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-              <Image
-                src="/newlogo.png"
-                alt="Yenasoy"
-                width={120}
-                height={120}
-                className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
-                priority
-              />
-            </div>
-          </div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">

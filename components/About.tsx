@@ -8,27 +8,32 @@ export default function About() {
   const { language } = useLanguage();
   const t = getTranslations(language);
 
-  const classIcons = [
+    const classIcons = [
     // S - Simple
-    <svg key="s" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-    </svg>,
+    <span key="s" className="w-8 h-8 flex items-center justify-center text-cyan-800 font-bold text-lg">S</span>,
+
     // M - Medium
-    <svg key="m" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-    </svg>,
+    <span key="m" className="w-8 h-8 flex items-center justify-center text-cyan-800 font-bold text-lg">M</span>,
     // L - Complex
-    <svg key="l" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-    </svg>,
+    <span key="l" className="w-8 h-8 flex items-center justify-center text-cyan-800 font-bold text-lg">L</span>,
     // XL - High-Complexity
-    <svg key="xl" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-    </svg>,
+    <span key="xl" className="w-8 h-8 flex items-center justify-center text-cyan-800 font-bold text-lg">XL</span>,
   ];
 
   return (
-    <section id="about" className="py-20 bg-circuit">
+    <section id="about" className="py-20 relative inset-shadow-xl">
+  {/* Diagonal Stripes Background */}
+    <div
+      className="absolute inset-0 -z-1  pointer-events-none"
+      style={{
+        backgroundImage: `
+          repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px),
+        repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px)
+        `,
+        backgroundSize: "40px 40px",
+      }}
+    />
+   
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* About Company - With Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
@@ -94,7 +99,7 @@ export default function About() {
                 className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-cyan-200 transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-cyan-100 rounded-lg text-cyan-800">
+                  <div className="p-2 bg-cyan-50 rounded-lg text-cyan-800">
                     {classIcons[index]}
                   </div>
                   <h4 className="font-bold text-gray-900 text-lg">{cls.name}</h4>

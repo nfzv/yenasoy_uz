@@ -25,14 +25,20 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/newlogo.png"
+          <Image
+              src="/newlogo_icon.png"
               alt="Yenasoy"
               width={40}
               height={40}
-              className="w-10 h-10 object-contain"
+              className="w-6 h-6 object-contain contrast-150"
             />
-            <span className="text-xl font-bold text-cyan-800">Yenasoy</span>
+            <Image
+              src="/newlogo_text.png"
+              alt="Yenasoy"
+              width={120}
+              height={120}
+              className="w-18 h-22 object-contain contrast-150"
+            />
           </Link>
 
           {/* Desktop Navigation */}

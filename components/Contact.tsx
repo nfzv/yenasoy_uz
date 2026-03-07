@@ -6,7 +6,7 @@ import { getTranslations } from "@/lib/translations";
 
 const TELEGRAM_USERNAME = "F3Diyorbek";
 const PHONE = "+998900697690";
-const EMAIL = "diyorbek@yenasoy.uz";
+const EMAIL = "info@yenasoy.uz";
 
 export default function Contact() {
   const { language } = useLanguage();
@@ -58,7 +58,7 @@ Message: ${formData.message}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-circuit-dense rounded-2xl shadow-xl p-8">
+          <div className="rounded-2xl shadow-sm p-8 bg-white">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>
@@ -142,28 +142,12 @@ Message: ${formData.message}
           </div>
 
           {/* Contact Information */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-start">
             <h3 className="text-2xl font-bold text-white mb-8">
               {t.contact.info.title}
             </h3>
 
             <div className="space-y-6">
-              {/* Phone */}
-              <a
-                href={`tel:${PHONE}`}
-                className="flex items-center gap-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors group"
-              >
-                <div className="p-3 bg-white/20 rounded-lg group-hover:bg-white/30 transition-colors">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-cyan-200 text-sm">{t.contact.info.phone}</p>
-                  <p className="text-white font-semibold text-lg">{PHONE}</p>
-                </div>
-              </a>
-
               {/* Email */}
               <a
                 href={`mailto:${EMAIL}`}
@@ -175,7 +159,7 @@ Message: ${formData.message}
                   </svg>
                 </div>
                 <div>
-                  <p className="text-cyan-200 text-sm">{t.contact.info.email}</p>
+                  <p className="text-cyan-100 text-sm">{t.contact.info.email}</p>
                   <p className="text-white font-semibold text-lg">{EMAIL}</p>
                 </div>
               </a>
@@ -193,8 +177,8 @@ Message: ${formData.message}
                   </svg>
                 </div>
                 <div>
-                  <p className="text-cyan-200 text-sm">{t.contact.info.telegram}</p>
-                  <p className="text-white font-semibold text-lg">@{TELEGRAM_USERNAME}</p>
+                  <p className="text-cyan-100 text-sm">{t.contact.info.telegram}</p>
+                  <p className="text-white font-semibold text-lg">{PHONE}</p>
                 </div>
               </a>
             </div>

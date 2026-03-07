@@ -107,22 +107,22 @@ const translations: Record<Language, TranslationKeys> = {
         subtitle: "Мы работаем с системами любой сложности",
         classes: [
           {
-            name: "S — Простая линия",
+            name: "Простая линия",
             size: "До 30 м, ≤5 двигателей/ПЧ, ≤15 датчиков",
             features: "Базовые пуск/стоп/блокировки. Без сложной синхронизации",
           },
           {
-            name: "M — Средняя линия",
+            name: "Средняя линия",
             size: "30–100 м, 6–15 двигателей/ПЧ, 16–50 датчиков",
             features: "Несколько конвейерных зон. Базовый ЧМИ и аварийная сигнализация",
           },
           {
-            name: "L — Сложная линия",
+            name: "Сложная линия",
             size: "100–200 м, 16–40 двигателей/ПЧ, 50–120 датчиков",
             features: "Интеграция машин. Логика накопления и заторов. Несколько ЧМИ / расширенная сигнализация",
           },
           {
-            name: "XL — Высокосложная система",
+            name: "Высокосложная система",
             size: "200 м+ или высокоплотная автоматизация, 40+ двигателей/ПЧ, 120+ датчиков",
             features: "Несколько интегрированных машин. Отслеживание / рецептуры. Расширенная диагностика. Интеграция системы безопасности",
           },
@@ -135,7 +135,7 @@ const translations: Record<Language, TranslationKeys> = {
       contactForPricing: "Свяжитесь с нами для расчёта стоимости",
       categories: [
         {
-          title: "Реактивная поддержка",
+          title: "Быстрая поддержка",
           description: "Услуги для устранения непредвиденных сбоев, остановок производства и срочной диагностики",
           items: [
             {
@@ -298,22 +298,22 @@ const translations: Record<Language, TranslationKeys> = {
         subtitle: "Biz har qanday murakkablikdagi tizimlar bilan ishlaymiz",
         classes: [
           {
-            name: "S — Oddiy liniya",
+            name: "Oddiy liniya",
             size: "30 m gacha, ≤5 motor/ChP, ≤15 datchik",
             features: "Asosiy ishga tushirish/to'xtatish/blokirovkalar. Murakkab sinxronizatsiyasiz",
           },
           {
-            name: "M — O'rta liniya",
+            name: "O'rta liniya",
             size: "30–100 m, 6–15 motor/ChP, 16–50 datchik",
             features: "Bir nechta konveyer zonalari. Asosiy HMI va avariya signalizatsiyasi",
           },
           {
-            name: "L — Murakkab liniya",
+            name: "Murakkab liniya",
             size: "100–200 m, 16–40 motor/ChP, 50–120 datchik",
             features: "Mashinalar integratsiyasi. To'planish va tiqilib qolish logikasi. Bir nechta HMI / kengaytirilgan signalizatsiya",
           },
           {
-            name: "XL — Yuqori murakkablikdagi tizim",
+            name: "Yuqori murakkablikdagi tizim",
             size: "200 m+ yoki yuqori zichlikdagi avtomatlashtirish, 40+ motor/ChP, 120+ datchik",
             features: "Bir nechta integratsiyalashgan mashinalar. Kuzatish / retseptlar. Kengaytirilgan diagnostika. Xavfsizlik tizimi integratsiyasi",
           },
@@ -489,22 +489,22 @@ const translations: Record<Language, TranslationKeys> = {
         subtitle: "We work with systems of any complexity",
         classes: [
           {
-            name: "S — Simple Line",
+            name: "Simple Line",
             size: "Up to 30 m, ≤5 motors/VFDs, ≤15 sensors",
             features: "Basic start/stop/interlocks. No complex synchronization",
           },
           {
-            name: "M — Medium Line",
+            name: "Medium Line",
             size: "30–100 m, 6–15 motors/VFDs, 16–50 sensors",
             features: "Multiple conveyor zones. Basic HMI and alarm signaling",
           },
           {
-            name: "L — Complex Line",
+            name: "Complex Line",
             size: "100–200 m, 16–40 motors/VFDs, 50–120 sensors",
             features: "Machine integration. Accumulation and jam logic. Multiple HMI / extended alarms",
           },
           {
-            name: "XL — High-Complexity System",
+            name: "High-Complexity System",
             size: "200 m+ or high-density automation, 40+ motors/VFDs, 120+ sensors",
             features: "Multiple integrated machines. Tracking / recipes. Advanced diagnostics. Safety system integration",
           },
@@ -517,7 +517,7 @@ const translations: Record<Language, TranslationKeys> = {
       contactForPricing: "Contact us for pricing",
       categories: [
         {
-          title: "Reactive Support",
+          title: "Fast Support",
           description: "Services for resolving unexpected failures, production downtime and urgent diagnostics",
           items: [
             {
