@@ -1,5 +1,4 @@
 # Yenasoy
-
 Industrial automation services company website based in Uzbekistan.
 
 ## About
@@ -26,26 +25,3 @@ Yenasoy provides comprehensive automation solutions for manufacturing production
 | M (Medium) | 30-100m | 6-15 | 16-50 |
 | L (Complex) | 100-200m | 16-40 | 50-120 |
 | XL (High-Complexity) | 200m+ | 40+ | 120+ |
-
-## Tech Stack
-
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS 4
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site.
-
-## Languages
-
-The website supports three languages:
-- Russian (ru)
-- Uzbek (uz)
-- English (en)
