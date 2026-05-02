@@ -5,7 +5,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { getTranslations } from "@/lib/translations";
 
 const TELEGRAM_USERNAME = "F3Diyorbek";
-const PHONE = "+998900697690";
+const PHONE = "+998773697590";
 const EMAIL = "info@yenasoy.uz";
 
 export default function Contact() {

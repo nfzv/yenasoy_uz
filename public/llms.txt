@@ -1,0 +1,75 @@
+# Yenasoy
+
+> Yenasoy is an industrial automation services company based in Uzbekistan, providing PLC programming, HMI development, SCADA integration, and technical support for manufacturing production lines.
+>
+> Yenasoy — компания по промышленной автоматизации в Узбекистане, предоставляющая услуги программирования ПЛК, разработки ЧМИ, интеграции SCADA и технической поддержки производственных линий.
+>
+> Yenasoy — O'zbekistondagi sanoat avtomatlashtirish xizmatlari kompaniyasi, PLC dasturlash, HMI ishlab chiqish, SCADA integratsiyasi va ishlab chiqarish liniyalari uchun texnik yordam ko'rsatadi.
+
+## Company Overview / О компании / Kompaniya haqida
+
+Yenasoy specializes in automation solutions for manufacturing enterprises of any scale in Uzbekistan and the surrounding region.
+
+**Services / Услуги / Xizmatlar:**
+
+- **PLC Programming / Программирование ПЛК / PLC dasturlash** — Control logic design and implementation for industrial automation systems
+- **HMI Development / Разработка ЧМИ / HMI ishlab chiqish** — Operator interfaces and visualization systems for production monitoring
+- **SCADA & VFD Integration / Интеграция SCADA и ЧРП / SCADA va VFD integratsiyasi** — Supervisory control systems and variable frequency drive integration
+- **Diagnostics & Support / Диагностика и поддержка / Diagnostika va qo'llab-quvvatlash** — Remote and on-site troubleshooting and technical assistance
+
+## Service Categories / Категории услуг / Xizmat turlari
+
+### 1. Reactive/Emergency Support
+- Remote Diagnostics and Troubleshooting
+- Remote Recovery and System Restart
+- On-Site Diagnostics
+- Emergency On-Site Recovery
+
+### 2. Planned Engineering Projects
+- Minor PLC Modifications
+- Standard PLC Modifications
+- HMI Modifications and Upgrades
+
+### 3. New Automation Development
+- New PLC Program Development
+- PLC + HMI Package Solutions
+- Full Production Line Software Packages
+
+### 4. Documentation & System Handover
+- Complete Documentation Packages
+- Access Transfer and Maintenance Handover
+
+### 5. Additional Options
+- Equipment Integration (Motors, VFDs, Sensors, Pneumatic Actuators, Servo Axes, HMI Screens)
+- Advanced Features (External Machine Integration, Recipe Systems, Barcode/Tracking, Advanced Diagnostics, Safety PLC Integration)
+
+## System Complexity Classes / Классы сложности систем / Tizim murakkabligi sinflari
+
+Yenasoy categorizes automation projects by complexity level:
+
+| Class | Line Length | Motors/VFDs | Sensors | Typical Features |
+|-------|-------------|-------------|---------|------------------|
+| **S (Simple)** | Up to 30m | ≤5 | ≤15 | Basic start/stop, interlocks |
+| **M (Medium)** | 30-100m | 6-15 | 16-50 | Multiple conveyor zones, basic HMI |
+| **L (Complex)** | 100-200m | 16-40 | 50-120 | Machine integration, accumulation logic |
+| **XL (High-Complexity)** | 200m+ | 40+ | 120+ | Multiple integrated machines, tracking, safety systems |
+
+## Target Industries / Целевые отрасли / Maqsadli sohalar
+
+- Food & Beverage Manufacturing
+- Packaging Lines
+- Conveyor Systems
+- General Manufacturing
+- Any production facility requiring industrial automation
+
+## Contact Information / Контактная информация / Aloqa ma'lumotlari
+
+- **Website / Веб-сайт / Veb-sayt**: https://yenasoy.uz
+- **Email / Эл. почта / Elektron pochta**: info@yenasoy.uz
+- **Phone / Телефон / Telefon**: +998773697590 / +998900697690
+- **Telegram**: @F3Diyorbek
+- **Location / Местоположение / Joylashuv**: Uzbekistan / Узбекистан / O'zbekiston
+
+## Optional
+
+- [Price List (PDF)](https://yenasoy.uz/price_list_client_v2.pdf): Detailed pricing information for services

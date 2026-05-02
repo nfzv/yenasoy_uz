@@ -1,0 +1,12 @@
+# Robots.txt for yenasoy.uz
+# https://yenasoy.uz
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yenasoy.uz/sitemap.xml
+
+# LLMs.txt - AI/LLM friendly documentation
+# See https://llmstxt.org for the specification
+# LLMs can find detailed information about this site at /llms.txt
